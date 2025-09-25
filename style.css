@@ -216,7 +216,9 @@ h1{
 display: flex;
 }
 
-
+#darkmood {
+    color: var(--thirdcolor);
+}
 
 nav ul li {
     font-size: 10px;
@@ -525,4 +527,5 @@ color: white !important;
 }
 .maindark{
 background-color: #1e1e1e!important;
+
 }
