@@ -31,9 +31,10 @@ const swiper = new Swiper('.slider-wrapper', {
   }
 });
 
-const darkbtn = document.getElementById("darkmood");
+const darkbtn = document.querySelectorAll(".darkbtn");
 
-darkbtn.addEventListener("click", function () {
+darkbtn.forEach(btn => {
+btn.addEventListener("click", function () {
   const nav = document.getElementsByClassName("fix")[0];
   const header = document.getElementsByClassName("homebg")[0];
 
@@ -69,8 +70,8 @@ const main=document.querySelector("main");
     main.classList.toggle("maindark");
 
   // icon
-  darkbtn.classList.toggle("fa-sun");
-  darkbtn.classList.toggle("fa-moon");
+  btn.classList.toggle("fa-sun");
+  btn.classList.toggle("fa-moon");
 
 const icons=document.querySelectorAll("i");
 icons.forEach(icon=>{
@@ -101,3 +102,4 @@ footer.classList.toggle("darkbg");
 
 
 });
+})
