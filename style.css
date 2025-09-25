@@ -217,7 +217,7 @@ display: flex;
 }
 
 #darkmood {
-    color: var(--thirdcolor);
+    color: var(--thirdcolor) !important;
 }
 
 nav ul li {
@@ -529,3 +529,4 @@ color: white !important;
 background-color: #1e1e1e!important;
 
 }
+
